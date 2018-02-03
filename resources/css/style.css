@@ -22,21 +22,20 @@ header {
   width: 165px;
   padding: 0px 15px;
   color: mediumaquamarine;
-  border: 1px solid black; /* just to help with layout. REMOVE BEFORE FINAL */
 }
 
-header ul{
+header ul, footer ul {
   display: inline-flex;
   justify-content: space-around;
   padding-right: 40px;
 }
 
-header li {
+header li, footer li {
   display: inline-flex;
   padding: 0px 15px;
 }
 
-header a {
+header a, footer a {
   color: black;
 }
 
@@ -53,6 +52,7 @@ main {
   padding-top: 40px;
   display: inline-flex;
   flex-wrap: wrap;
+  font-family: Georgia;
 }
 
 .stories {
@@ -62,7 +62,6 @@ main {
 }
 
 .story {
-  font-family: Georgia;
   font-size: 17px;
   color: black;
 }
@@ -119,4 +118,53 @@ main {
 .byline {
   height: 290px;
   width: 300px;
+}
+
+h2.bites {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bites li {
+  background-color: whitesmoke;
+  font-family: verdana;
+  font-size: 12px;
+  color: dimgray;
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  margin: 0px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.bar {
+    padding-left: 30px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
 }
