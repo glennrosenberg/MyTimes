@@ -41,9 +41,8 @@ header a, footer a {
 
 /* main and section styles */
 
-main,
-article {
-  margin: 0px;
+main {
+  margin: 0px 0px 80px 0px;
 }
 
 main {
@@ -96,6 +95,7 @@ main {
 
 .image h1 {
   font-size: 40px;
+  padding-left: 20px;
 }
 
 .image.main_story {
@@ -138,7 +138,8 @@ h2.bites {
 }
 
 footer {
-  position: absolute;
+  position: relative;
+  top: 80px;
   width: 100%;
   height: 350px;
   display: flex;
