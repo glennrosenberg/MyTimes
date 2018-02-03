@@ -1,12 +1,18 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 5px;
   border-bottom: 1px solid black;
   font-family: verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
 }
 
 .logo {
@@ -16,6 +22,7 @@ header {
   width: 165px;
   padding: 0px 15px;
   color: mediumaquamarine;
+  border: 1px solid black; /* just to help with layout. REMOVE BEFORE FINAL */
 }
 
 header ul{
@@ -31,4 +38,40 @@ header li {
 
 header a {
   color: black;
+}
+
+/* main and section styles */
+
+main,
+article,
+.caption {
+  margin: 0px;
+  border: 1px solid black; /* just to help with layout. REMOVE BEFORE FINAL */
+}
+
+main {
+  position: relative;
+  top: 72px;
+  padding-top: 40px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 30px;
+  border: 1px solid black;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
